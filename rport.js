@@ -1,5 +1,3 @@
-"use strict";
-
 /*;
 	@module-license:
 		The MIT License (MIT)
@@ -53,6 +51,7 @@
 */
 
 const comex = require( "comex" );
+const zelf = require( "zelf" );
 
 const rport = function rport( synchronous, option ){
 	/*;
@@ -65,6 +64,7 @@ const rport = function rport( synchronous, option ){
 	*/
 
 	return comex( "netstat -ntl" )
+		.context( zelf( this ) )
 		.pipe( "grep LISTEN" )
 		.pipe( "tr -s ' '" )
 		.pipe( "cut -d ' ' -f 4" )

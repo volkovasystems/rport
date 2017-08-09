@@ -1,6 +1,6 @@
 {
 	"name": "rport",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "List open port.",
 	"main": "rport.js",
 	"scripts": {
@@ -27,6 +27,7 @@
 	},
 	"homepage": "https://github.com/volkovasystems/rport#readme",
 	"dependencies": {
-		"comex": "^0.24.0"
+		"comex": "^0.24.0",
+		"zelf": "^0.14.0"
 	}
 }
