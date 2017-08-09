@@ -1,0 +1,32 @@
+{
+	"name": "rport",
+	"version": "0.0.0",
+	"description": "List open port.",
+	"main": "rport.js",
+	"scripts": {
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"reset": "rsetmod clean",
+		"clear": "rsetmod clean --clear",
+		"formal": "jesy apply '*.json'",
+		"test": "mocha rport-test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/rport.git"
+	},
+	"keywords": [
+		"list",
+		"open",
+		"port",
+		"rport"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/rport/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/rport#readme",
+	"dependencies": {
+		"comex": "^0.24.0"
+	}
+}
